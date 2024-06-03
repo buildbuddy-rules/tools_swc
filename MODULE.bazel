@@ -4,8 +4,6 @@ module(
 
 bazel_dep(name = "platforms", version = "0.0.10")
 
-# swc
-
 swc = use_extension("@tools_swc//swc:defs.bzl", "swc")
 swc.toolchain(
     name = "swc",
